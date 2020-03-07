@@ -1,7 +1,13 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-chatbot = ChatBot('CMPE257')
+# chatbot = ChatBot('CMPE257')
+
+chatbot = ChatBot(
+    'CMPE257',
+    storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
+    database_uri='mongodb+srv://admin:admin@cluster0-3inox.mongodb.net/test?retryWrites=true&w=majority'
+)
 # Create a new trainer for the chatbot
 # trainer = ChatterBotCorpusTrainer(chatbot)
 

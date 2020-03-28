@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "8adf21fe-e97c-4007-acc5-1329c956b8f8",
+		"name": "257",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "train",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\" : [\"Bye\", \"BYE, Have a nice day!\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "54.202.210.126:3000/train",
+					"host": [
+						"54",
+						"202",
+						"210",
+						"126"
+					],
+					"port": "3000",
+					"path": [
+						"train"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"q\" : \"bye\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "54.202.210.126:3000/inference",
+					"host": [
+						"54",
+						"202",
+						"210",
+						"126"
+					],
+					"port": "3000",
+					"path": [
+						"inference"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -3,9 +3,10 @@ from flask import request, jsonify
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 # chatbot = ChatBot('CMPE257')
 chatbot = ChatBot(
